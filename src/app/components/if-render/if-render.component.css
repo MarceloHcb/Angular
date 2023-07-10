@@ -1,0 +1,12 @@
+.inputName {
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.inputName:focus {
+  outline: none;
+  border-color: #5c9cea;
+  box-shadow: 0 0 5px #5c9cea;
+}

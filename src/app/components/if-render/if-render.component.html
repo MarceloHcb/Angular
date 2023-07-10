@@ -1,0 +1,12 @@
+<div class="class">
+<h2 *ngIf="canShow">Esta mensagem agora pode ser exibida</h2>
+<h2 *ngIf="name === 'mclo'; else nameNotFound">Voce digitou {{name}} está certo!!!!!</h2>
+<label for="">Nome: 
+  <input type="text" class="inputName" placeholder="Digite mclo!!" [(ngModel)]="name">
+</label>
+<ng-template #nameNotFound>
+  <div>
+    <h2>Digite o nome certo no input!!!</h2>
+  </div>
+</ng-template>
+</div>
