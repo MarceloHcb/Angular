@@ -1,0 +1,7 @@
+<div class="class eventos">
+  <p *ngIf="show">{{message}}</p>
+  <button (click)="showMessage()" class="even-button">{{buttonTitle}}</button>
+  <label for=""> Alterando mensagem com change
+    <input type="text" name="" id="" (change)="changeMessage($event)">
+  </label>  
+</div>

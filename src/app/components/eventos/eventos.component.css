@@ -1,0 +1,28 @@
+.eventos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;  
+}
+
+.even-button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #5c9cea;
+  color: #ffffff;
+  width: 200px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.even-button:hover {
+  background-color: #3c80e6;
+}
+
+.even-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(92, 156, 234, 0.5);
+}
