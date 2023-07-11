@@ -1,4 +1,5 @@
 import { Component,Input } from '@angular/core';
+import { UserDataService } from '../../services/user-data.service';
 
 @Component({
   selector: 'app-parent-data',
@@ -6,6 +7,11 @@ import { Component,Input } from '@angular/core';
   styleUrls: ['./parent-data.component.css']
 })
 export class ParentDataComponent {
-  @Input() name:string = '';
-  @Input() userData!: {email:string, role:string} 
+  name: string;
+  userData: { email: string, role: string };
+
+  constructor(private userDataService: UserDataService) {
+    this.name = this.userDataService.userName;
+    this.userData = this.userDataService.userData;
+  }
 }
