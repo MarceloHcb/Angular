@@ -1,0 +1,9 @@
+.sound {
+  position: absolute;
+  top: -40px;
+  left: 120px;
+}
+
+.content {
+  position: relative;
+}
