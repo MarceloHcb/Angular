@@ -1,9 +1,10 @@
 <div class="class">
-<h2>Animais</h2>
-<ul>
+<h2>Animals</h2>
+<ul class="animals">
   <li *ngFor="let animal of animals" class="content">
-    {{animal.name}}    
-    <button (click)="toggleSound(animal)" >Show sound</button>
+    <h2 class="title">{{animal.name}} </h2>   
+    <button (click)="toggleSound(animal)" class="btnSound" >Show sound</button>
+    <button (click)="removeAnimal(animal)" class="delete" >Excluir</button>
     <h1 *ngIf="animal.show" class="sound">{{animal.sound}}</h1>
   </li>
   </ul>

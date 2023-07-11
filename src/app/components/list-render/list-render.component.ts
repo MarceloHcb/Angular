@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Animal } from 'src/app/Animals';
+import { ListService } from 'src/app/services/list.service';
 @Component({
   selector: 'app-list-render',
   templateUrl: './list-render.component.html',
@@ -16,8 +17,16 @@ export class ListRenderComponent {
     {name: 'Bird', sound: 'Tweet!', show: false},
     {name: 'Sheep', sound: 'Baa!', show: false},
   ]
+
+  constructor(private listService: ListService) { }
   
   toggleSound(animal: Animal):void {
     animal.show = !animal.show;
   }
+
+  removeAnimal(animal: Animal):void {    
+    this.animals = this.listService.remove(this.animals, animal);
+  }
+    
+
 }

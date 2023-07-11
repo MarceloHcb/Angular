@@ -1,9 +1,76 @@
 .sound {
   position: absolute;
   top: -40px;
-  left: 120px;
+  left: 60px;
 }
 
 .content {
   position: relative;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.animals {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;  
+}
+.animals li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);  
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.animals li:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.btnSound,
+.delete {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btnSound {
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+}
+
+.btnSound:hover {
+  background-color: #27ae60;
+}
+
+.delete {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+}
+
+.delete:hover {
+  background-color: #c0392b;
 }
