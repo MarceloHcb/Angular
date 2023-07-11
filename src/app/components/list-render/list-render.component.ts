@@ -7,18 +7,11 @@ import { ListService } from 'src/app/services/list.service';
   styleUrls: ['./list-render.component.css']
 })
 export class ListRenderComponent {
-  animals: Animal[] = [
-    {name: 'Dog', sound: 'Woof!', show: false},
-    {name: 'Cat', sound: 'Meow!', show: false},
-    {name: 'Cow', sound: 'Moo!', show: false},
-    {name: 'Fox', sound: 'Wa-pa-pa-pa-pa-pa-pow!', show: false},
-    {name: 'Pig', sound: 'Oink!', show: false},
-    {name: 'Duck', sound: 'Quack!', show: false},
-    {name: 'Bird', sound: 'Tweet!', show: false},
-    {name: 'Sheep', sound: 'Baa!', show: false},
-  ]
+  animals: Animal[] = [];
 
-  constructor(private listService: ListService) { }
+  constructor(private listService: ListService) { 
+    this.getAnimals();
+  }
   
   toggleSound(animal: Animal):void {
     animal.show = !animal.show;
@@ -28,5 +21,10 @@ export class ListRenderComponent {
     this.animals = this.listService.remove(this.animals, animal);
   }
     
-
+  getAnimals():void {
+    this.listService.getAll().subscribe((animals) => {
+      this.animals = animals;
+    }
+    );
+  }
 }

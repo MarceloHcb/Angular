@@ -1,0 +1,44 @@
+{
+  "animals": [
+    {
+      "name": "Dog",
+      "sound": "Woof!",
+      "show": false
+    },
+    {
+      "name": "Cat",
+      "sound": "Meow!",
+      "show": false
+    },
+    {
+      "name": "Cow",
+      "sound": "Moo!",
+      "show": false
+    },
+    {
+      "name": "Fox",
+      "sound": "Wa-pa-pa-pa-pa-pa-pow!",
+      "show": false
+    },
+    {
+      "name": "Pig",
+      "sound": "Oink!",
+      "show": false
+    },
+    {
+      "name": "Duck",
+      "sound": "Quack!",
+      "show": false
+    },
+    {
+      "name": "Bird",
+      "sound": "Tweet!",
+      "show": false
+    },
+    {
+      "name": "Sheep",
+      "sound": "Baa!",
+      "show": false
+    }
+  ]
+}
