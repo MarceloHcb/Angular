@@ -2,10 +2,12 @@
 <h2>Animals</h2>
 <ul class="animals">
   <li *ngFor="let animal of animals" class="content">
-    <h2 class="title">{{animal.name}} </h2>   
-    <button (click)="toggleSound(animal)" class="btnSound" >Show sound</button>
-    <button (click)="removeAnimal(animal)" class="delete" >Excluir</button>
-    <h1 *ngIf="animal.show" class="sound">{{animal.sound}}</h1>
-  </li>
+      <a routerLink="/list/{{animal.id}}" >
+        <h2 class="title">{{animal.name}} </h2>   
+      </a>
+      <button (click)="toggleSound(animal)" class="btnSound" >Show sound</button>
+      <button (click)="removeAnimal(animal)" class="delete" >Excluir</button>
+      <h1 *ngIf="animal.show" class="sound">{{animal.sound}}</h1>
+    </li>
   </ul>
 </div>

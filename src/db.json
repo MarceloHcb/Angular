@@ -1,44 +1,61 @@
 {
   "animals": [
     {
+      "id": 1,
       "name": "Dog",
       "sound": "Woof!",
-      "show": false
+      "show": false,
+      "image": "https://media.tenor.com/CtdJZ1NwRCsAAAAM/pet-dog.gif"
+
     },
     {
+      "id": 2,
       "name": "Cat",
       "sound": "Meow!",
-      "show": false
+      "show": false,
+      "image":"https://i.gifer.com/2GU.gif"
     },
     {
+      "id": 3,
       "name": "Cow",
       "sound": "Moo!",
-      "show": false
+      "show": false,
+      "image": "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3YzdDhyd2U1eGN5YWpzazF1M2o5OGp5bDU3bzJ0aTd3aHRiaGtmdSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/kdicjggNCgM10dtqvO/giphy.gif"
     },
     {
+      "id": 4,
       "name": "Fox",
       "sound": "Wa-pa-pa-pa-pa-pa-pow!",
-      "show": false
+      "show": false,
+      "image": "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHk3ZGR0eTZpMm5jMjc1bDg4MWx5NzQzcGNwaGliZ3R2Ym5ocXNmOCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/dvBgr7pA6FTJOMOALY/giphy.gif"
     },
     {
+      "id": 5,
       "name": "Pig",
       "sound": "Oink!",
-      "show": false
+      "show": false,
+      "image": "https://media3.giphy.com/media/ThCpqjXJw862c/200w.gif?cid=790b76114gdy47se1axagp512a8mlugtj5hperrtgfx8pe42&ep=v1_gifs_search&rid=200w.gif&ct=g"
     },
     {
+      "id": 6,
       "name": "Duck",
       "sound": "Quack!",
-      "show": false
+      "show": false,
+      "image": "https://media.tenor.com/V7xoW6f6YRUAAAAM/ducks-funny-animal.gif"
     },
     {
+      "id": 7,
       "name": "Bird",
       "sound": "Tweet!",
-      "show": false
+      "show": false,
+      "image": "https://i.pinimg.com/originals/1b/ce/20/1bce202928cd96be38a57303905b8f4b.gif"
     },
     {
+      "id": 8,
       "name": "Sheep",
       "sound": "Baa!",
-      "show": false
+      "show": false,
+      "image": "https://media.tenor.com/ULF45t8gS6QAAAAM/happy-sheep.gif"
     }
   ]
 }
